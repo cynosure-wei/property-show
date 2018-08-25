@@ -14,13 +14,13 @@ public class UserServiceImpl implements UserService{
 
 	@Autowired
 	private UserRepository userRepository;
-	
+
 	@Autowired
     private RoleRepository roleRepository;
-	
+
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
-	
+
     @Override
 	public UserDTO findUserByEmail(String email) {
 		return userRepository.findByEmail(email);
@@ -31,6 +31,7 @@ public class UserServiceImpl implements UserService{
 		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         RoleDTO role = roleRepository.findByType("USER");
         user.setRole(role);
+        //System.err.print(role.toString());
 		userRepository.save(user);
 	}
 
