@@ -1,0 +1,525 @@
+[
+  {
+    "name": "AppRoutingModule",
+    "file": "src/app/app-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forRoot(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 253,
+        "pos": 1100,
+        "end": 1145,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 1100,
+          "end": 1111,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 1112,
+          "end": 1145,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 174,
+              "pos": 1114,
+              "end": 1143,
+              "flags": 0,
+              "expression": {
+                "kind": 172,
+                "pos": 1114,
+                "end": 1135,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1114,
+                  "end": 1127,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1128,
+                  "end": 1135,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 1136,
+                  "end": 1142,
+                  "flags": 0,
+                  "text": "routes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "kind": 253,
+        "pos": 1146,
+        "end": 1175,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 1146,
+          "end": 1157,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 1158,
+          "end": 1175,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 1160,
+              "end": 1173,
+              "flags": 0,
+              "text": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppModule",
+    "file": "src/app/app.module.ts",
+    "providers": [
+      {
+        "name": "HouseService"
+      }
+    ],
+    "declarations": [
+      {
+        "name": "AppComponent",
+        "file": "src/app/app.component.ts",
+        "selector": "app-root",
+        "providers": [],
+        "templateUrl": [
+          "app.component.html"
+        ],
+        "styleUrls": [
+          "app.component.css"
+        ],
+        "__raw": [
+          {
+            "kind": 253,
+            "pos": 58,
+            "end": 82,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 58,
+              "end": 70,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 71,
+              "end": 82,
+              "flags": 0,
+              "text": "app-root"
+            }
+          },
+          {
+            "kind": 253,
+            "pos": 83,
+            "end": 122,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 83,
+              "end": 98,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 99,
+              "end": 122,
+              "flags": 0,
+              "text": "./app.component.html"
+            }
+          },
+          {
+            "kind": 253,
+            "pos": 123,
+            "end": 161,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 123,
+              "end": 136,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 170,
+              "pos": 137,
+              "end": 161,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 139,
+                  "end": 160,
+                  "flags": 0,
+                  "text": "./app.component.css"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DashboardComponent"
+      },
+      {
+        "name": "HouseDetailComponent"
+      },
+      {
+        "name": "HousesComponent"
+      },
+      {
+        "name": "HouseSearchComponent"
+      },
+      {
+        "name": "MessagesComponent"
+      },
+      {
+        "name": "HouseFormComponent"
+      },
+      {
+        "name": "IndexComponent"
+      },
+      {
+        "name": "AboutComponent",
+        "file": "app/about/about.component.ts",
+        "selector": "app-about",
+        "providers": [],
+        "templateUrl": [
+          "about.component.html"
+        ],
+        "styleUrls": [
+          "about.component.css"
+        ],
+        "__raw": [
+          {
+            "kind": 253,
+            "pos": 66,
+            "end": 91,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 66,
+              "end": 78,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 79,
+              "end": 91,
+              "flags": 0,
+              "text": "app-about"
+            }
+          },
+          {
+            "kind": 253,
+            "pos": 92,
+            "end": 133,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 92,
+              "end": 107,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 108,
+              "end": 133,
+              "flags": 0,
+              "text": "./about.component.html"
+            }
+          },
+          {
+            "kind": 253,
+            "pos": 134,
+            "end": 174,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 134,
+              "end": 147,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 170,
+              "pos": 148,
+              "end": 174,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 150,
+                  "end": 173,
+                  "flags": 0,
+                  "text": "./about.component.css"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactComponent"
+      },
+      {
+        "name": "ServicesComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "BrowserModule"
+      },
+      {
+        "name": "HttpClientModule"
+      },
+      {
+        "name": "AppRoutingModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [
+      {
+        "name": "AppComponent"
+      }
+    ],
+    "__raw": [
+      {
+        "kind": 253,
+        "pos": 1014,
+        "end": 1295,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 1014,
+          "end": 1030,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 1031,
+          "end": 1295,
+          "flags": 0,
+          "multiLine": true,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 1033,
+              "end": 1051,
+              "flags": 0,
+              "text": "AppComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1052,
+              "end": 1076,
+              "flags": 0,
+              "text": "DashboardComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1077,
+              "end": 1103,
+              "flags": 0,
+              "text": "HouseDetailComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1104,
+              "end": 1125,
+              "flags": 0,
+              "text": "HousesComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1126,
+              "end": 1152,
+              "flags": 0,
+              "text": "HouseSearchComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1153,
+              "end": 1176,
+              "flags": 0,
+              "text": "MessagesComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1177,
+              "end": 1201,
+              "flags": 0,
+              "text": "HouseFormComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1202,
+              "end": 1222,
+              "flags": 0,
+              "text": "IndexComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1223,
+              "end": 1243,
+              "flags": 0,
+              "text": "AboutComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1244,
+              "end": 1266,
+              "flags": 0,
+              "text": "ContactComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1267,
+              "end": 1290,
+              "flags": 0,
+              "text": "ServicesComponent"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 253,
+        "pos": 1296,
+        "end": 1380,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 1296,
+          "end": 1307,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 1308,
+          "end": 1380,
+          "flags": 0,
+          "multiLine": true,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 1310,
+              "end": 1329,
+              "flags": 0,
+              "text": "BrowserModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1330,
+              "end": 1352,
+              "flags": 0,
+              "text": "HttpClientModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1353,
+              "end": 1375,
+              "flags": 0,
+              "text": "AppRoutingModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 253,
+        "pos": 1381,
+        "end": 1410,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 1381,
+          "end": 1394,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 1395,
+          "end": 1410,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 1397,
+              "end": 1409,
+              "flags": 0,
+              "text": "HouseService"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 253,
+        "pos": 1411,
+        "end": 1440,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 1411,
+          "end": 1424,
+          "flags": 0,
+          "text": "bootstrap"
+        },
+        "initializer": {
+          "kind": 170,
+          "pos": 1425,
+          "end": 1440,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 1427,
+              "end": 1439,
+              "flags": 0,
+              "text": "AppComponent"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
