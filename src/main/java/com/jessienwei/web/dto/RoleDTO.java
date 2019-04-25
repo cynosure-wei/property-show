@@ -24,7 +24,7 @@ public class RoleDTO {
 	private String type;
 
 	@OneToMany(mappedBy = "role", cascade = CascadeType.ALL, orphanRemoval = true)
-	private List<UserDTO> users = new ArrayList<>();
+	private List<User> users = new ArrayList<>();
 
 	public Long getId() {
 		return id;

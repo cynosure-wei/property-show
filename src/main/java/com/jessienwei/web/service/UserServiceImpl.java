@@ -5,7 +5,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.jessienwei.web.dto.RoleDTO;
-import com.jessienwei.web.dto.UserDTO;
+import com.jessienwei.web.dto.User;
 import com.jessienwei.web.repository.RoleRepository;
 import com.jessienwei.web.repository.UserRepository;
 
@@ -22,12 +22,12 @@ public class UserServiceImpl implements UserService{
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
-	public UserDTO findUserByEmail(String email) {
+	public User findUserByEmail(String email) {
 		return userRepository.findByEmail(email);
 	}
 
 	@Override
-	public void saveUser(UserDTO user) {
+	public void saveUser(User user) {
 		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         RoleDTO role = roleRepository.findByType("USER");
         user.setRole(role);

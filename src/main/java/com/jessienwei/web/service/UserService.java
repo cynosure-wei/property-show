@@ -1,8 +1,8 @@
 package com.jessienwei.web.service;
 
-import com.jessienwei.web.dto.UserDTO;
+import com.jessienwei.web.dto.User;
 
 public interface UserService {
-	public UserDTO findUserByEmail(String email);
-	public void saveUser(UserDTO user);
+	public User findUserByEmail(String email);
+	public void saveUser(User user);
 }

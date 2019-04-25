@@ -79,7 +79,7 @@ public class HouseDTO implements Serializable {
 
 	private AreaDTO area;
 
-	private UserDTO user;
+	private User user;
 
 
 
@@ -87,11 +87,11 @@ public class HouseDTO implements Serializable {
 	@OneToOne
 	@JoinColumn(name = "user_id")
 	//@NotBlank
-	public UserDTO getUser() {
+	public User getUser() {
 		return user;
 	}
 
-	public void setUser(UserDTO user) {
+	public void setUser(User user) {
 		this.user = user;
 	}
 

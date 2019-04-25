@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
-import com.jessienwei.web.dto.UserDTO;
+import com.jessienwei.web.dto.User;
 import com.jessienwei.web.exception.ResourceNotFoundException;
 import com.jessienwei.web.repository.UserRepository;
 
@@ -19,24 +19,24 @@ public class UserController {
 
     // Get All Users
     @GetMapping(path="/all")
-    public List<UserDTO> getAllUsers() {
+    public List<User> getAllUsers() {
         return userRepository.findAll();
     }
     // Create a new User
     @PostMapping(path="/add")
-    public UserDTO addUser(@Valid @RequestBody UserDTO user) {
+    public User addUser(@Valid @RequestBody User user) {
 		return userRepository.save(user);
     }
     // Get a Single User
     @GetMapping(path="/{id}")
-    public UserDTO getUserById(@PathVariable(value = "id") Long userId) {
+    public User getUserById(@PathVariable(value = "id") Long userId) {
         return userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "id", userId));
     }
     // Update a Note
     @PutMapping(path="/update/{id}")
-    public UserDTO updateUser(@PathVariable(value = "id") Long userId, @Valid @RequestBody UserDTO userDetails) {
+    public User updateUser(@PathVariable(value = "id") Long userId, @Valid @RequestBody User userDetails) {
 
-        UserDTO user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "id", userId));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "id", userId));
 
 
         user.setName(userDetails.getName());
@@ -51,7 +51,7 @@ public class UserController {
     // Delete a Note
     @DeleteMapping(path="/delete/{id}")
     public ResponseEntity<?> deleteUser(@PathVariable(value = "id") Long userId) {
-        UserDTO user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "id", userId));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "id", userId));
 
         userRepository.delete(user);
 

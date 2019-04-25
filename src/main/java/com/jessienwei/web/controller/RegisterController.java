@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.jessienwei.web.dto.UserDTO;
+import com.jessienwei.web.dto.User;
 import com.jessienwei.web.model.SignUpModel;
 import com.jessienwei.web.service.UserService;
 
@@ -30,7 +30,7 @@ public class RegisterController {
 	@PostMapping(path="/signup")
 	public ModelAndView processSignUpForm(ModelAndView modelAndView, @Valid SignUpModel model, BindingResult bindingResult, HttpServletRequest request) {
 		// Lookup user in database by e-mail
-		UserDTO userExists = userService.findUserByEmail(model.getEmail());
+		User userExists = userService.findUserByEmail(model.getEmail());
 		// If exists, send error message to the view
 		if (userExists != null) {
 			modelAndView.addObject("errorMessage", "Oops! There is already a user registered with the email provided.");
@@ -41,7 +41,7 @@ public class RegisterController {
 			modelAndView.setViewName("signup");
 		}else { 
 			// create user in DB
-			UserDTO user = new UserDTO();
+			User user = new User();
 			user.setName(model.getUsername());
 			user.setEmail(model.getEmail());
 			user.setPhone(model.getPhone());
