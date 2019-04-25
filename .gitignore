@@ -7,3 +7,4 @@ bin/
 build/
 .project
 /target/
+.DS_Store
