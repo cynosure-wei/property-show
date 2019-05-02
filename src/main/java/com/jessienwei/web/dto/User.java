@@ -20,7 +20,7 @@ import org.hibernate.validator.constraints.Length;
 import org.springframework.data.annotation.Transient;
 
 @Entity
-@Table(name = "user")
+@Table(name = "\"user\"")
 public class User {
 
 	@Id
