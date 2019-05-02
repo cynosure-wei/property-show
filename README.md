@@ -1,3 +1,3 @@
 # property-show
 
-Proerty web app
+Property web app
